@@ -39,7 +39,7 @@ for (let i = 1; i <= 12; i++) {
     alert(precioSeguro +" / "+ i + " cuotas " + " = "+ resultado );
 }
 
-
+console.log("Te enviaremos tu cotización al correo: " + correo)
 
 
 
