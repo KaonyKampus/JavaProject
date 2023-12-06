@@ -1,78 +1,47 @@
- //console.log("Hellow World")
 
 
- //variables antes de ecmascript 6 
- 
+console.log("Bienvenido a nuestro simulador de seguros KAONYX");
+console.log("A continuación te solicitaremos unos datos para poder hacer tu consulta");
 
- //var variableVieja =  10;  //no usar var es solo para la explicación 
+let nombre = prompt("Ingresa tu nombre, por favor");
+let apellido = prompt("Ingresa tu apellido, por favor");
+let correo = prompt("Ingresa tu correo electrónico");
 
+let espacio = " ";
 
+console.log("Muchas gracias Sr(a), " + nombre + espacio + apellido);
 
- //la forma nueva de hacer variables es => let y constant 
-//let es que un dato puede cambiar dentro de nuestro codigo 
+let vehiculoTypeCarro = prompt("¿Tu vehiculo es un carro?");
+let precioVehiculoCarro = 0; 
 
- //let primerNumero = 1;
- //console.log(primerNumero);
- //primerNumero = 2;
+if (vehiculoTypeCarro === "si") {
+  precioVehiculoCarro = parseInt(prompt("¿Cuánto cuesta tu vehiculo?"));
+} else {
+  if (vehiculoTypeCarro === "no") {
+    alert("Lo sentimos en este momento solamente tenemos covertura para carros");
+  }
+}
 
-// console.log(primerNumero)
+if (precioVehiculoCarro > 0) { 
+  let porcentajeSeguro = 0.10;
+  let precioSeguro = precioVehiculoCarro * porcentajeSeguro;
 
-/*const es una variable que tiene un dato constante y se suelen escribir en mayuscula con guion bajo cuando le colocamos dos nombres se trata 
- de poner en mayuscula pero no hay una regla fija*/
-
- //const CONSTANTE_NUMERO = 4;
-
-
- //console.log(CONSTANTE_NUMERO);
-
-
-
- //let nombre;
- //nombre = "davidSilva";
- //console.log (nombre);
-
-
-
-//let numero = 1;
-
-//let string = "cadena de caracteres";
-
-//let bolean = true; //false 
+  alert("Tu seguro cuesta " + precioSeguro);
+  
+}
 
 
-//let suma = 5 + 3;
-//console.log(suma)
+console.log ("Tu seguro por cuotas se distribuirá de la siguiente manera")
+
+let precioSeguro = parseInt(prompt("precio del seguro"));
+for (let i = 1; i <= 12; i++) {
+    let resultado = precioSeguro / i ;
+    alert(precioSeguro +" / "+ i + " cuotas " + " = "+ resultado );
+}
 
 
 
-//let numeroUno = 85;
-//let numeroDos = 145;
 
-//let resultado = numeroUno * numeroDos;
-//console.log(resultado);
-
-
-//let nombre = "David";
-//let apellido = "Silva";
-//let vacio = " ";
-
-
-//let nombreApellido = nombre + vacio + apellido;
-//console.log("Hola mundo mi nombre es: " + //nombre + " " + apellido)
-
- //prompt y alert 
-
-//let nombre = prompt ("Ingresa tu p nombre ");
-
-//let numero1 = parseInt(prompt("Ingresa tu numero"));
-//let numero2 = parseInt(prompt("Ingresa otro numero"));
-
-//let resultado = numero1 + numero2;
-//alert (resultado)
-
-//let numero
-
-//OPERADORES
 
 
 
